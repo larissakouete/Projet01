@@ -1,6 +1,7 @@
 language: ruby
 rvm:
 - 2.4.4
+before_script: "bendle exec rails db:migrate"
 deploy:
   provider: heroku
   api_key:
