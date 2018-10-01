@@ -26,7 +26,7 @@ class OrdersController < ApplicationController
     end
     @erros = @erros + "]"
   end
-  def index
+  def lister_commande
     @orders= []
     @allOrders = Order.all
     @allOrders.each do |order|
